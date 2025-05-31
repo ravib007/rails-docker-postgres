@@ -1,0 +1,12 @@
+# config/database.yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['db'] %>
+  username: <%= ENV['ravikumar'] %>
+  password: <%= ENV['ravi@123'] %>
+  pool: 5
+
+development:
+  <<: *default
+  database: ruby_app
