@@ -13,3 +13,7 @@ if ! bundle exec rails db:exists 2>/dev/null; then
 fi
 
 exec "$@"
+
+
+chmod +x entrypoint.sh
+
